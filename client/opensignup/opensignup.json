@@ -13,5 +13,9 @@
         "css"
       ]
     }
+  },
+  "dependencies": {
+    "ember": ">= 0",
+    "spade": ">= 0"
   }
 }

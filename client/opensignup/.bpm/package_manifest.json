@@ -1,10 +1,50 @@
 {
-  "uglify-js": {
-    "version": "1.0.7",
-    "path": "/Users/sylvain/.bpm/gems/uglify-js-1.0.7"
+  "ember": {
+    "version": "0.9.3.1",
+    "path": "/Users/sylvain/.bpm/gems/ember-0.9.3.1"
   },
   "spade": {
     "version": "1.0.2",
     "path": "/Users/sylvain/.bpm/gems/spade-1.0.2"
+  },
+  "uglify-js": {
+    "version": "1.0.7",
+    "path": "/Users/sylvain/.bpm/gems/uglify-js-1.0.7"
+  },
+  "ember-runtime": {
+    "version": "0.9.3",
+    "path": "/Users/sylvain/.bpm/gems/ember-runtime-0.9.3"
+  },
+  "ember-views": {
+    "version": "0.9.3",
+    "path": "/Users/sylvain/.bpm/gems/ember-views-0.9.3"
+  },
+  "ember-states": {
+    "version": "0.9.3",
+    "path": "/Users/sylvain/.bpm/gems/ember-states-0.9.3"
+  },
+  "ember-handlebars": {
+    "version": "0.9.3.1",
+    "path": "/Users/sylvain/.bpm/gems/ember-handlebars-0.9.3.1"
+  },
+  "ember-handlebars-format": {
+    "version": "0.9.3",
+    "path": "/Users/sylvain/.bpm/gems/ember-handlebars-format-0.9.3"
+  },
+  "ember-metal": {
+    "version": "0.9.3",
+    "path": "/Users/sylvain/.bpm/gems/ember-metal-0.9.3"
+  },
+  "jquery": {
+    "version": "1.6.2",
+    "path": "/Users/sylvain/.bpm/gems/jquery-1.6.2"
+  },
+  "handlebars-edge": {
+    "version": "1.0.0.beta.3",
+    "path": "/Users/sylvain/.bpm/gems/handlebars-edge-1.0.0.beta.3"
+  },
+  "metamorph": {
+    "version": "1.0.0",
+    "path": "/Users/sylvain/.bpm/gems/metamorph-1.0.0"
   }
 }
