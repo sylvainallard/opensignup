@@ -127,7 +127,7 @@ h1:before
 
 /*--------------------*/
 
-fieldset
+div
 {
     border: 0;
     padding: 0;
@@ -139,7 +139,8 @@ fieldset
 
 #inputs input
 {
-    font: 15px Arial, Helvetica;
+    color: #666;
+	font: 15px Arial, Helvetica;
 	padding: 10px 10px 10px 10px;
     margin: 0 0 10px 0;
     width: 323px; /* 353 + 2 + 45 = 400 */

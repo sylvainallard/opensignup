@@ -17,17 +17,25 @@
   <body>
 	<form id="login">
 	    <h1>Sign Up</h1>
-	    <fieldset id="inputs">
-	        <input id="username" type="email" placeholder="you@email.com" autofocus required>   
-	        
-	    </fieldset>
-	    <fieldset id="actions">
-	        <input type="submit" class="signup-button" id="submit" value="Sign Up">
-	 
-	    </fieldset>
+		<script type="text/x-handlebars">
+			<div id="inputs">
+				{{#view SC.TextField id="username" type="email" placeholder="you@email.com"}}
+				{{/view}}
+			</div>
+		    <div id="actions">
+				{{#view SC.Button class="signup-button" id="submit" classBinding="isActive" }}
+				<label for="signup-button">Sign Up</label>
+				{{/view}}
+			</div>
+  		</script>
 	</form>
-	
   </body>
 
   <script type="text/javascript" src="assets/bpm_libs.js"></script>
+  <script type="text/javascript"> 
+	      spade.ready(function() { 
+			//bootstrap
+	        spade.require('opensignup/signup/lib/main');			
+	      }); 
+	</script>
 </html>
