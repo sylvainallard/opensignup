@@ -1,6 +1,6 @@
 /* ===========================================================================
    BPM Combined Asset File
-   MANIFEST: ember (0.9.3.1) ember-handlebars (0.9.3.1) ember-handlebars-format (0.9.3) ember-metal (0.9.3) ember-runtime (0.9.3) ember-states (0.9.3) ember-views (0.9.3) handlebars-edge (1.0.0.beta.3) jquery (1.6.2) metamorph (1.0.0) opensignup () spade (1.0.2)
+   MANIFEST: ember (0.9.3.1) ember-datastore (0.9) ember-datetime (0.9.3) ember-handlebars (0.9.3.1) ember-handlebars-format (0.9.3) ember-indexset (0.9) ember-metal (0.9.3) ember-runtime (0.9.3) ember-statechart (0.9) ember-states (0.9.3) ember-utils (0.9) ember-views (0.9.3) handlebars-edge (1.0.0.beta.3) jquery (1.6.2) metamorph (1.0.0) opensignup () spade (1.0.2)
    This file is generated automatically by the bpm (http://www.bpmjs.org)
    =========================================================================*/
 
@@ -147,7 +147,8 @@ div
 
 #inputs input
 {
-    font: 15px Arial, Helvetica;
+    color: #666;
+	font: 15px Arial, Helvetica;
 	padding: 10px 10px 10px 10px;
     margin: 0 0 10px 0;
     width: 323px; /* 353 + 2 + 45 = 400 */

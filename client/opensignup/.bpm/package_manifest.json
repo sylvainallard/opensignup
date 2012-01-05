@@ -3,6 +3,14 @@
     "version": "0.9.3.1",
     "path": "/Users/sylvain/.bpm/gems/ember-0.9.3.1"
   },
+  "ember-statechart": {
+    "version": "0.9",
+    "path": "/Users/sylvain/.bpm/gems/ember-statechart-0.9"
+  },
+  "ember-datastore": {
+    "version": "0.9",
+    "path": "/Users/sylvain/.bpm/gems/ember-datastore-0.9"
+  },
   "spade": {
     "version": "1.0.2",
     "path": "/Users/sylvain/.bpm/gems/spade-1.0.2"
@@ -30,6 +38,18 @@
   "ember-handlebars-format": {
     "version": "0.9.3",
     "path": "/Users/sylvain/.bpm/gems/ember-handlebars-format-0.9.3"
+  },
+  "ember-utils": {
+    "version": "0.9",
+    "path": "/Users/sylvain/.bpm/gems/ember-utils-0.9"
+  },
+  "ember-datetime": {
+    "version": "0.9.3",
+    "path": "/Users/sylvain/.bpm/gems/ember-datetime-0.9.3"
+  },
+  "ember-indexset": {
+    "version": "0.9",
+    "path": "/Users/sylvain/.bpm/gems/ember-indexset-0.9"
   },
   "ember-metal": {
     "version": "0.9.3",

@@ -8,6 +8,12 @@
       ],
       "minifier": "uglify-js"
     },
+	"signup_lib.js": {
+		"spade:format": "function",
+      "directories": [
+        "lib/signup/lib"
+      ]
+    },
     "bpm_styles.css": {
       "files": [
         "css"
@@ -16,6 +22,8 @@
   },
   "dependencies": {
     "ember": ">= 0",
+	"ember-statechart": ">= 0",
+	"ember-datastore": ">= 0",
     "spade": ">= 0"
   }
 }

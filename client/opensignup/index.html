@@ -19,19 +19,22 @@
 	    <h1>Sign Up</h1>
 		<script type="text/x-handlebars">
 			<div id="inputs">
-				{{#view SC.TextField id="username" type="email" placeholder="you@email.com"}}
+				{{#view SU.SignupField id="email-field" type="email" placeholder="you@email.com" nl_sc_action="createAccountAction" valueBinding="SU.emailController.value"}}
 				{{/view}}
 			</div>
 		    <div id="actions">
-				{{#view SC.Button class="signup-button" id="submit" classBinding="isActive" }}
+				{{#view SU.Button class="signup-button" id="submit" classBinding="isActive" sc_action="createAccountAction"}}
 				<label for="signup-button">Sign Up</label>
 				{{/view}}
 			</div>
   		</script>
+
+
 	</form>
   </body>
 
   <script type="text/javascript" src="assets/bpm_libs.js"></script>
+	<script type="text/javascript" src="assets/signup_lib.js"></script>
   <script type="text/javascript"> 
 	      spade.ready(function() { 
 			//bootstrap

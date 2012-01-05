@@ -11,6 +11,7 @@ import java.util.Calendar;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import org.opensignup.persistence.PersistenceManager;
+import org.opensignup.pojo.EmailSignup;
 import org.opensignup.store.EmailSignupDbEntity;
 /**
  *
@@ -18,14 +19,14 @@ import org.opensignup.store.EmailSignupDbEntity;
  */
 public class SignupFactory {
     
-    public static SimpleMessage signup(String email){
+    public static SimpleMessage signup(EmailSignup su){
         SimpleMessage msg=new SimpleMessage("");
         //TODO: validate if email already registered...
-        if (email == null || email.length() == 0) {       
+        if (su.email == null || su.email.length() == 0) {       
             msg.content = "_Empty";           
-        }else if (!email.contains("@")) {
+        }else if (!su.email.contains("@")) {
             msg.content = "_invalid";
-        } else if (!SignupFactory.isUnique(email)) {
+        } else if (!SignupFactory.isUnique(su.email)) {
             msg.content = "_InUse";
         }else{
             msg.content = "Accepted";
@@ -33,7 +34,7 @@ public class SignupFactory {
                 EntityManager em = PersistenceManager.getInstance().getSignupEntityManager();
                 em.getTransaction().begin();
                 EmailSignupDbEntity entity = new EmailSignupDbEntity();
-                entity.setEmail(email);
+                entity.setEmail(su.email);
                 entity.setDateCreate(new Timestamp(Calendar.getInstance().getTimeInMillis()));
                 em.persist(entity);
                 em.getTransaction().commit();
