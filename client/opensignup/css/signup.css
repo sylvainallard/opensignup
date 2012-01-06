@@ -228,6 +228,20 @@ div
   border: none;
 }
 
+.signup-message{
+	font: 14px Arial, Helvetica;
+}
 
+.success{
+	color: #61b832;
+}
+
+.exist{
+	color: #4ea5cd;
+}
+
+.error{
+	color: #de4343;
+}
 
 

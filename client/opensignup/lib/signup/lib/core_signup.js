@@ -26,23 +26,11 @@ SU.core_signup = SC.Object.create({
             success: function(data) {
                 console.log(data);
                 if (data.content == "_Success") {
-                    SU.msgController.set('success', YES);
-					SU.msgController.set('exist', NO);
-					SU.msgController.set('error', NO);
-					SU.emailController.set('value', '');
-					
+                    SU.statechart.sendAction("successAction");		
                 } else if (data.content == "_InUse"){
-					SU.msgController.set('success', NO);
-					SU.msgController.set('exist', YES);
-					SU.msgController.set('error', NO);
-					SU.emailController.set('value', '');
-					
+					SU.statechart.sendAction("alreadySignedUpAction");
 				}else {
-                    SU.msgController.set('success', NO);
-					SU.msgController.set('exist', NO);
-					SU.msgController.set('error', YES);
-					SU.emailController.set('value', '');
-					
+                    SU.statechart.sendAction("invalidEmailAction");			
                 }
             },
             async: YES

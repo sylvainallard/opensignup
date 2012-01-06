@@ -27,13 +27,13 @@
 				<label for="signup-button">Sign Up</label>
 				{{/view}}
 			</div>
-			{{#view tagName="div" class="litho"  isVisibleBinding="SU.msgController.success"}}
+			{{#view tagName="div" class="success signup-message"  isVisibleBinding="SU.msgController.success"}}
 				<span>Thanks for signing up! Will be in touch with you soon.</span>
 			{{/view}}
-			{{#view tagName="div" class="litho"  isVisibleBinding="SU.msgController.exist"}}
+			{{#view tagName="div" class="exist signup-message"  isVisibleBinding="SU.msgController.exist"}}
 				<span>You have already signed up! Will be in touch with you soon.</span>
 			{{/view}}
-			{{#view tagName="div" class="litho"  isVisibleBinding="SU.msgController.error"}}
+			{{#view tagName="div" class="error signup-message"  isVisibleBinding="SU.msgController.error"}}
 				<span>You need to enter a valid email to signed up! </span>
 			{{/view}}
   		</script>

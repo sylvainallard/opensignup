@@ -236,6 +236,20 @@ div
   border: none;
 }
 
+#signup-message{
+	font: bold 15px Arial, Helvetica;
+}
 
+#signup-message .success{
+	color: #61b832;
+}
+
+#signup-message .exist{
+	color: #eaaf51;
+}
+
+#signup-message .error{
+	color: #de4343;
+}
 
 
