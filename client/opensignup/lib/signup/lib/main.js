@@ -1,9 +1,8 @@
 require("ember");
 require("ember-statechart");
-SU = Ember.Application.create({
-	serverHost: '/'
-});
+require("./app");
 require("./controllers/email");
+require("./controllers/msg");
 require("./core_statechart");
 require("./core_signup");
 

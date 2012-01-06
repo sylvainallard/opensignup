@@ -12,8 +12,9 @@ SU.SignupField = SC.TextField.extend({
         }
         return this.get("placeholder_not_loc").loc();
     }.property('placeholder_not_loc'),
-
+	
     insertNewline: function() {
+		console.log("SignupFiels.insertNewLine");
         if (!SC.none(this.get('nl_sc_action'))) {
             SU.statechart.sendAction(this.get('nl_sc_action'), this);
         }

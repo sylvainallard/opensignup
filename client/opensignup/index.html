@@ -15,22 +15,31 @@
     <title>opensignup</title>
   </head>
   <body>
-	<form id="login">
+	<div id="login">
 	    <h1>Sign Up</h1>
+	
 		<script type="text/x-handlebars">
 			<div id="inputs">
-				{{#view SU.SignupField id="email-field" type="email" placeholder="you@email.com" nl_sc_action="createAccountAction" valueBinding="SU.emailController.value"}}
-				{{/view}}
+				{{view SU.SignupField id="email-field" type="email" placeholder="you@email.com" valueBinding="SU.emailController.value" nl_sc_action="createAccountAction"  autofocus="true" autocomplete="on"}}
 			</div>
 		    <div id="actions">
 				{{#view SU.Button class="signup-button" id="submit" classBinding="isActive" sc_action="createAccountAction"}}
 				<label for="signup-button">Sign Up</label>
 				{{/view}}
 			</div>
+			{{#view tagName="div" class="litho"  isVisibleBinding="SU.msgController.success"}}
+				<span>Thanks for signing up! Will be in touch with you soon.</span>
+			{{/view}}
+			{{#view tagName="div" class="litho"  isVisibleBinding="SU.msgController.exist"}}
+				<span>You have already signed up! Will be in touch with you soon.</span>
+			{{/view}}
+			{{#view tagName="div" class="litho"  isVisibleBinding="SU.msgController.error"}}
+				<span>You need to enter a valid email to signed up! </span>
+			{{/view}}
   		</script>
 
 
-	</form>
+	</div>
   </body>
 
   <script type="text/javascript" src="assets/bpm_libs.js"></script>

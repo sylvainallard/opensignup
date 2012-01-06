@@ -1,13 +1,10 @@
 console.log("admin running...");
 
 
-SU.emailController = SC.Object.create({
-    email: undefined,
-	
-});
 
 SU.core_signup = SC.Object.create({
-    register: function() {
+   
+	register: function() {
 		console.log("ENTER register!!!");
         this.set('globalError', '');
 		
@@ -28,10 +25,24 @@ SU.core_signup = SC.Object.create({
             },
             success: function(data) {
                 console.log(data);
-                if (data.content == "_success") {
-                    window.location.href = "index.html?email=" + SU.emailController.get('email');
-                } else {
-                    this.set('globalError', data.content.loc());
+                if (data.content == "_Success") {
+                    SU.msgController.set('success', YES);
+					SU.msgController.set('exist', NO);
+					SU.msgController.set('error', NO);
+					SU.emailController.set('value', '');
+					
+                } else if (data.content == "_InUse"){
+					SU.msgController.set('success', NO);
+					SU.msgController.set('exist', YES);
+					SU.msgController.set('error', NO);
+					SU.emailController.set('value', '');
+					
+				}else {
+                    SU.msgController.set('success', NO);
+					SU.msgController.set('exist', NO);
+					SU.msgController.set('error', YES);
+					SU.emailController.set('value', '');
+					
                 }
             },
             async: YES

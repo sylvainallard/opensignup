@@ -29,7 +29,7 @@ public class SignupFactory {
         } else if (!SignupFactory.isUnique(su.email)) {
             msg.content = "_InUse";
         }else{
-            msg.content = "Accepted";
+            msg.content = "_Success";
             //TODO: register email in DB.
                 EntityManager em = PersistenceManager.getInstance().getSignupEntityManager();
                 em.getTransaction().begin();
