@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'UpperEastSideRegular';
+    src: url('./font/UpperEastSide-webfont.eot');
+    src: url('./font/UpperEastSide-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/UpperEastSide-webfont.woff') format('woff'),
+         url('./font/UpperEastSide-webfont.ttf') format('truetype'),
+         url('./font/UpperEastSide-webfont.svg#UpperEastSideRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body
 {
     height: 100%;
@@ -5,30 +16,26 @@ html, body
 
 body
 {
-    font: 12px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;    
+/*    font: 12px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;    */
     margin: 0;
-    background-color: #d9dee2;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebeef2), to(#d9dee2));
-    background-image: -webkit-linear-gradient(top, #ebeef2, #d9dee2);
-    background-image: -moz-linear-gradient(top, #ebeef2, #d9dee2);
-    background-image: -ms-linear-gradient(top, #ebeef2, #d9dee2);
-    background-image: -o-linear-gradient(top, #ebeef2, #d9dee2);
-    background-image: linear-gradient(top, #ebeef2, #d9dee2);
-	
+	background: url(img/blue_linen.png) repeat #d9dee2;
 }
 
 /*--------------------*/
 
 #login
 {
-    
-	background-color: #fff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
-    background-image: -webkit-linear-gradient(top, #fff, #eee);
-    background-image: -moz-linear-gradient(top, #fff, #eee);
-    background-image: -ms-linear-gradient(top, #fff, #eee);
-    background-image: -o-linear-gradient(top, #fff, #eee);
-    background-image: linear-gradient(top, #fff, #eee);  
+   	
+   	
+   	background-color: #fff;
+   	
+   	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+   	background-image: -webkit-linear-gradient(top, #fff, #eee);
+   	background-image: -moz-linear-gradient(top, #fff, #eee);
+   	background-image: -ms-linear-gradient(top, #fff, #eee);
+   	background-image: -o-linear-gradient(top, #fff, #eee);
+   	background-image: linear-gradient(top, #fff, #eee);      
+	
     height: 140px;
     width: 450px;
     margin: -150px 0 0 -230px;
@@ -84,13 +91,15 @@ body
 h1
 {
    /* text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0 rgba(0, 0, 0, .5);*/
-    text-transform: uppercase;
+	    
+/*    text-transform: uppercase;*/
+    
     text-align: center;
     color: #666;
     margin: 0 0 30px 0;
     letter-spacing: 4px;
-    font: normal 26px/1 Verdana, Helvetica;
-    position: relative;
+	position: relative;
+	font: normal small-caps 46px/1 'UpperEastSideRegular';
 }
 
 h1:after, h1:before
